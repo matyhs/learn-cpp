@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/mnt/d/personal/repos/learn-cpp/class'
+clang++ -c -std=c++20 -Wall -Wextra -Wpedantic -Werror account.cpp -o account.o
+clang++ -c -std=c++20 -Wall -Wextra -Wpedantic -Werror transaction.cpp -o transaction.o
+ 
+clang++ -c -std=c++20 -Wall -Wextra -Wpedantic -Werror savings_account.cpp -o savings_account.o
+clang++ -c -std=c++20 -Wall -Wextra -Wpedantic -Werror main.cpp -o main.o
+clang++ main.o account.o transaction.o savings_account.o -o main
+make: Leaving directory '/mnt/d/personal/repos/learn-cpp/class'
+ 
